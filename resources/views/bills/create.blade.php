@@ -42,6 +42,9 @@
 </form>
 
 @push('scripts')
+<!-- Canvas Confetti CDN -->
+<script src="https://cdn.jsdelivr.net/npm/canvas-confetti@1.6.0/dist/confetti.browser.min.js"></script>
+
 <script>
 (function(){
   const productSelect = document.getElementById('productSelect');
@@ -95,7 +98,16 @@
       e.preventDefault();
       return alert('Add at least one item to bill.');
     }
-    // create hidden inputs
+
+    // Fire confetti effect
+    confetti({
+      particleCount: 200,
+      spread: 90,
+      origin: { y: 0.6 },
+      colors: ['#ff0a54','#ff477e','#ff7096','#ff85a1','#fbb1b9']
+    });
+
+    // Add hidden inputs for items
     items.forEach((it, idx) => {
       const inp = document.createElement('input');
       inp.type = 'hidden';
