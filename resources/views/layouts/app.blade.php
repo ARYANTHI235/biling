@@ -19,6 +19,7 @@
         <li class="nav-item"><a class="nav-link" href="{{ route('products.index') }}">Products</a></li>
         <li class="nav-item"><a class="nav-link" href="{{ route('bills.index') }}">Bills</a></li>
         <li class="nav-item"><a class="nav-link" href="{{ route('bills.create') }}">Create Bill</a></li>
+        <li class="nav-item"><a class="nav-link" href="{{ route('reports.summary') }}">Reports</a></li>
       </ul>
     </div>
   </div>
