@@ -25,8 +25,8 @@
 <body>
   <div class="receipt">
     <div class="center">
-      <div class="bold" style="font-size:16px;">MEGA FIRECRACKER SHOP</div>
-      <div class="line"></div>
+      <div class="bold" style="font-size:16px;">Shree Shivakashi Crackers</div>
+      <div class="line">Maniratna complex, Kamrej Gam Road, Near - S.V. Food</div>
     </div>
 
     <table class="small">
@@ -38,9 +38,9 @@
         <td></td>
         <td class="right">Time: {{ $bill->created_at->format('h:i A') }}</td>
       </tr>
-      <tr>
+      <!-- <tr>
         <td colspan="2">Customer: {{ $bill->customer_name }}</td>
-      </tr>
+      </tr> -->
     </table>
 
     <div class="line"></div>

@@ -6,14 +6,14 @@
 <form id="billForm" action="{{ route('bills.store') }}" method="POST">
   @csrf
   <div class="row mb-3">
-    <div class="col-md-4">
+    <div class="col-md-12">
       <label class="form-label">Bill No</label>
       <input type="text" name="bill_no" value="{{ $nextNumber }}" readonly class="form-control">
     </div>
-    <div class="col-md-6">
+    <!-- <div class="col-md-6">
       <label class="form-label">Customer Name</label>
       <input name="customer_name" id="customer_name" class="form-control" required>
-    </div>
+    </div> -->
   </div>
 
   <h5>Items</h5>

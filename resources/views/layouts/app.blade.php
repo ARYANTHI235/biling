@@ -13,7 +13,7 @@
 <body>
 <nav class="navbar navbar-expand-lg navbar-dark bg-danger mb-4">
   <div class="container">
-    <a class="navbar-brand" href="{{ route('bills.index') }}">MEGA FIRECRACKER SHOP</a>
+    <a class="navbar-brand" href="{{ route('bills.index') }}">Shree Shivakashi Crackers</a>
     <div class="collapse navbar-collapse">
       <ul class="navbar-nav ms-auto">
         <li class="nav-item"><a class="nav-link" href="{{ route('products.index') }}">Products</a></li>

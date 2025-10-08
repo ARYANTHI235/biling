@@ -11,10 +11,10 @@
       <label class="form-label">Bill No</label>
       <input type="text" name="bill_no" value="{{ $bill->bill_no }}" readonly class="form-control">
     </div>
-    <div class="col-md-6">
+    <!-- <div class="col-md-6">
       <label class="form-label">Customer Name</label>
       <input name="customer_name" id="customer_name" class="form-control" value="{{ old('customer_name', $bill->customer_name) }}" required>
-    </div>
+    </div> -->
   </div>
 
   <h5>Items</h5>

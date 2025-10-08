@@ -12,7 +12,7 @@
     <tr>
       <th>ID</th>
       <th>Bill No</th>
-      <th>Customer</th>
+      <!-- <th>Customer</th> -->
       <th>Total</th>
       <th>Date</th>
       <th>Action</th>
@@ -23,7 +23,7 @@
     <tr>
       <td>{{ $b->id }}</td>
       <td>{{ $b->bill_no }}</td>
-      <td>{{ $b->customer_name }}</td>
+      <!-- <td>{{ $b->customer_name }}</td> -->
       <td>{{ number_format($b->total_amount,2) }}</td>
       <td>{{ $b->created_at->format('Y-m-d') }}</td>
       <td>

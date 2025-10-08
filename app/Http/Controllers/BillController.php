@@ -32,7 +32,7 @@ class BillController extends Controller
     {
         $request->validate([
             'bill_no' => 'required|unique:bills,bill_no',
-            'customer_name' => 'required',
+            // 'customer_name' => 'required',
             'items' => 'required|array|min:1'
         ]);
 
@@ -60,7 +60,7 @@ class BillController extends Controller
 
             $bill = Bill::create([
                 'bill_no' => $request->bill_no,
-                'customer_name' => $request->customer_name,
+                // 'customer_name' => $request->customer_name,
                 'total_amount' => $total,
             ]);
 
@@ -116,7 +116,7 @@ class BillController extends Controller
     public function update(Request $request, Bill $bill)
     {
         $request->validate([
-            'customer_name' => 'required',
+            // 'customer_name' => 'required',
             'items' => 'required|array|min:1'
         ]);
 
@@ -151,7 +151,7 @@ class BillController extends Controller
             $total = array_sum(array_column($items, 'total'));
 
             $bill->update([
-                'customer_name' => $request->customer_name,
+                // 'customer_name' => $request->customer_name,
                 'total_amount' => $total,
             ]);
 
