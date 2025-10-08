@@ -22,7 +22,7 @@
     <tbody></tbody>
   </table>
 
-  <div class="d-flex gap-2 mb-3">
+  <div class="d-flex gap-2 mb-3 border p-4 rounded">
     <select id="productSelect" class="form-select w-50">
       <option value="">-- Select product --</option>
       @foreach($products as $p)
